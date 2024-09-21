@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kranthi Yelaboina - Student Innovator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #ffffff;
+            --accent-color: #ff7043;
+            --text-color: #333333;
+            --background-color: #e8f0fe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: var(--primary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1s ease-out;
+        }
+
+        .card {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .slider {
+            display: flex;
+            animation: slide 20s linear infinite;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            padding: 1rem;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            border-radius: 10px;
+            margin-right: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/api/placeholder/200/200" alt="Kranthi Yelaboina" class="profile-img">
+            <h1>Kranthi Yelaboina</h1>
+            <p class="subtitle">Student Innovator | Knowledgebase Creator</p>
+        </header>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm Kranthi Yelaboina, a passionate student with a drive for innovation and knowledge sharing. I've developed a comprehensive knowledgebase for my fellow students, aiming to make learning more accessible and engaging for everyone in our college community.</p>
+            <p>My journey in creating this resource has been both challenging and rewarding. I believe in the power of collaborative learning and hope that my work contributes to the academic success of my peers.</p>
+        </section>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <h3>Knowledgebase Highlights</h3>
+                    <p>Covering a wide range of subjects relevant to our curriculum</p>
+                </div>
+                <div class="slide">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Designed for easy navigation and quick information retrieval</p>
+                </div>
+                <div class="slide">
+                    <h3>Regular Updates</h3>
+                    <p>Constantly expanding and refining the content based on feedback</p>
+                </div>
+                <div class="slide">
+                    <h3>Knowledgebase Highlights</h3>
+                    <p>Covering a wide range of subjects relevant to our curriculum</p>
+                </div>
+                <div class="slide">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Designed for easy navigation and quick information retrieval</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com/kranthiyelaboina" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/kranthiyelaboina" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/kranthiyelaboina" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/kranthiyelaboina" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:kranthi.yelaboina@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</body>
+</html>
