@@ -1,0 +1,490 @@
+/* General css - body, html and fonts */
+body{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+    /* background-color: #FFF0EA; */
+    background-color: #ffecec;
+    font-size: 62.5%;
+}
+
+.mainText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    color: rgb(190, 35, 21);
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 130%;
+    word-spacing: 5px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: light;
+    font-size: 1.4rem;
+    line-height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(67, 67, 67);
+}
+
+i{
+    font-size: 1.2rem;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(47, 47, 47);
+    display: inline-block;
+}
+
+.button{
+    background-color: inherit;
+    border: solid 5px #5A7BD0;
+    border-radius: 20px;
+    height: 8vh;
+    width: 30%;
+    margin: 2vh 15% 2vh 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #5A7BD0;
+    color: white;
+    transition: 200ms;
+}
+
+.button:active{
+    background-color: #FFF0EA;
+    color: black;
+}
+
+.redirectContainer{
+    background-color: #3f3f3f;
+    height: 6vh;
+    border: dashed rgb(255, 255, 255) 2px;
+    color: rgb(255, 255, 255);
+}
+.redirectContainer h2{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 6vh;
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Header section css */
+
+header{
+    height: 10vh;
+    margin: 7vh 10%;
+    padding: 0 7%;
+    border: solid 5px #6CC3A4;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSideHeader,
+.rightSideHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSideHeader{
+    width: 27%;
+}
+
+.rightSideHeader{
+    width: 25%;
+}
+
+/* Hero section css */
+
+.heroSection{
+    height: 80vh;
+    margin: 7vh 10%;
+    padding: 0 7%;
+    border: solid 5px #C76464;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+
+/* Branches Section css */
+
+.branchSection h2{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 4vh;
+}
+
+.branchSection button{
+    width: fit-content;
+    padding: 0 2%;
+    margin: 2vh 5% 2vh 0;
+}
+
+.branch{
+    height: fit-content;
+    margin: 7vh 10%;
+    padding: 7vh 7%;
+    border: solid 5px #AA98D4;
+    border-radius: 20px;
+}
+
+.branch h1{
+    font-size: 2.8rem;
+}
+
+.branchButtonGrid{
+    height: fit-content;
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+
+.branchButtonGrid button{
+    width: 100%;
+}
+
+.semOne, .semTwo, .semThree{
+    height: fit-content;
+    margin-top: 10vh;
+    padding: 7vh 7%;
+    border: solid 5px #E29D9F;
+    border-radius: 20px;
+}
+
+.contactHeader{
+    margin-bottom: 10vh;
+}
+
+.linkHolder{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.linkHolder span{
+    font-weight: bold;
+}
+
+.contactIcons{
+    font-size: 1.5rem;
+}
+
+.fa-discord{
+    color: #7289DA;
+}
+
+.fa-linkedin{
+    color: #0072b1 ;
+}
+
+.fa-github{
+    color: rgb(46, 46, 46);
+}
+
+.fa-envelope{
+    color: grey;
+}
+
+/* Responsive media queries */
+
+/* laptops */
+@media screen and (max-width: 1024px){
+    .mainText{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    i{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .button{
+        font-size: 0.7rem;
+        min-width: fit-content;
+    }
+
+    .heroRight img{
+        width: 300px;
+    }
+
+    .branchSection h2{
+        font-size: 1.6rem;
+    }
+    .branch h1{
+        font-size: 2.4rem;
+    }
+}
+
+/* small screen laptops */
+@media screen and (max-width: 1300px){
+    .mainText{
+        font-size: 1.18rem;
+    }
+    h1{
+        font-size: 2.88rem;
+        line-height: 100%;
+    }
+    h2{
+        font-size: 0.98rem;
+    }
+    i{
+        font-size: 0.98rem;
+    }
+    p{
+        font-size: 0.88rem;
+    }
+    .button{
+        font-size: 0.68rem;
+        min-width: fit-content;
+    }
+
+    .heroRight img{
+        width: 320px;
+    }
+
+    .branchSection h2{
+        font-size: 1.58rem;
+    }
+    .branch h1{
+        font-size: 2.38rem;
+    }
+}
+
+/* @media screen and (min-width: 1024px){
+    .redirectContainer{
+        display: none;
+    }
+} */
+
+/* Tablets */
+@media screen and (max-width: 768px){
+    .mainText{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.6rem;
+        line-height: 100%;
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+    i{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .button{
+        font-size: 0.6rem;
+        min-width: fit-content;
+    }
+    .heroRight img{
+        width: 250px;
+    }
+
+    .branchSection h2{
+        font-size: 1.4rem;
+    }
+    .branch h1{
+        font-size: 2.2rem;
+    }
+    .leftSideHeader{
+        width: 30%;
+    }
+
+    .branchButtonGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Large Mobiles */
+@media screen and (max-width: 425px){
+    header{
+        height: 7vh;
+        margin: 3vh 5%;
+        padding: 0 5%;
+    }
+    .heroSection{
+        flex-direction: column;
+        height: fit-content;
+        gap: 6vh;
+        padding: 4vh 5%;
+        margin: 3vh 5%;
+    }
+    .branch{
+        margin: 3vh 5%;
+        padding: 4vh 5%;
+    }
+    .mainText{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.4rem;
+        line-height: 100%;
+        text-align: center;
+    }
+    h2{
+        font-size: 0.8rem;
+        letter-spacing: 0;
+    }
+    i{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .button{
+        font-size: 0.75rem;
+        min-width: fit-content;
+        padding: 0;
+        height: 30px;
+        border-width: 3px;
+    }
+    .heroSection .button{
+        margin: 2vh 9%;
+    }
+    .leftSideHeader{
+        width: 45%;
+        align-items: center;
+    }
+    .rightSideHeader{
+        width: 37%;
+    }
+    .branchSection h2{
+        font-size: 1.2rem;
+    }
+    .branch h1{
+        font-size: 2rem;
+    }
+    .branchSection .button{
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .semOne, .semTwo, .semThree{
+        height: fit-content;
+        margin-top: 7vh;
+        padding: 3vh 5%;
+        border: solid 5px #E29D9F;
+        border-radius: 20px;
+    }
+    .linkHolder{
+        gap: 5%;
+    }
+    .linkHolder p{
+        font-size: 0.7rem;
+    }
+    .linkholder i{
+        font-size: 0.6rem;
+    }
+}
+
+/* ultrawide displays */
+@media screen and (min-width: 1700px){
+    header{
+        border: solid 7px #6CC3A4;
+        border-radius: 30px;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    i{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .button{
+        font-size: 1.4rem;
+        border-width: 7px;
+        border-radius: 30px;
+    }
+    .branch{
+        border: solid 7px #AA98D4;
+        border-radius: 30px;
+    }
+    .heroSection{
+        border: solid 7px #C76464;
+        border-radius: 30px;
+    }
+    .semOne, .semTwo, .semThree{
+        border: solid 7px #E29D9F;
+        border-radius: 30px;
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 2vh;
+    background-color: #5A7BD0;
+    margin-top: 20vh;
+}
+
+/* dark theme css styles */
+.darkBody{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.whiteFont{
+    color: white;
+    font-weight: lighter;
+}
+
+.darkButton{
+    border-color: #5E77F9;
+    color: white;
+}
+
+.darkButton:hover{
+    background-color: #5E77F9;
+}
